@@ -1,11 +1,8 @@
 on:
-  push:
-
+  workflow_dispatch: {}
 name: Secret Leaks
-
 permissions:
   contents: read
-
 jobs:
   trufflehog:
     runs-on: ubuntu-latest
