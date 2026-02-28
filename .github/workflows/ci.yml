@@ -38,7 +38,7 @@ jobs:
         - deps-latest
         - deps-minimum
     continue-on-error: ${{ matrix.test == 'integration' }}
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
@@ -93,7 +93,7 @@ jobs:
         deps_versions:
         - deps-latest
     continue-on-error: false
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
@@ -145,7 +145,7 @@ jobs:
         deps_versions:
         - deps-latest
     continue-on-error: false
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
